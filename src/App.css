@@ -1,38 +1,77 @@
-.App {
-  text-align: center;
+/*
+COLORS:
+
+Light green: #7ed56f
+Medium green: #55c57a
+Dark green: #28b485
+
+*/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  font-family: "Lato" ,sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color:#777;
+  padding: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header__text-box{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.header{
+  height: 95vh;
+  background-image: linear-gradient(to right bottom ,hsla(111, 55%, 64%, 0.8),hsla(160, 64%, 43%, 0.8)),url("./img/hero.jpg");
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0,100% 0, 100% 75vh, 0 100%);
+  position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+.header__logo-box{
+  position: absolute;
+  top:40px;
+  left: 40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header__logo{
+  height: 35px;
+}
+
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  margin-bottom: 6rem
+}
+
+.heading-primary--main {
+  display: block;
+  font-size: 4rem;
+  font-weight: 400;
+  letter-spacing: 3.5rem;
+  -webkit-animation-name: moveInLeft;
+  animation-name: moveInLeft;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out
+}
+
+.heading-primary--sub {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 1.5rem;
 }
