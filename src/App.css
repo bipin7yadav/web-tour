@@ -27,6 +27,7 @@ body{
   top: 40%;
   left: 50%;
   transform: translate(-50%,-50%);
+  text-align: center;
 }
 
 .header{
@@ -44,15 +45,21 @@ body{
   left: 40px;
 }
 
+
+
 .header__logo{
   height: 35px;
 }
+
+/* .header__logo:hover{
+  animation: moveInRight 1s ease-out;
+} */
 
 .heading-primary {
   color: #fff;
   text-transform: uppercase;
   -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+  backface-visibility: hidden; /* to avoid shaking of animation */
   margin-bottom: 6rem
 }
 
@@ -61,12 +68,11 @@ body{
   font-size: 4rem;
   font-weight: 400;
   letter-spacing: 3.5rem;
-  -webkit-animation-name: moveInLeft;
   animation-name: moveInLeft;
-  -webkit-animation-duration: 1s;
   animation-duration: 1s;
-  -webkit-animation-timing-function: ease-out;
-  animation-timing-function: ease-out
+  /* animation-delay: 3s; */
+  /* animation-iteration-count: 3; */
+  animation-timing-function: ease-out;
 }
 
 .heading-primary--sub {
@@ -74,4 +80,102 @@ body{
   font-size: 1.5rem;
   font-weight: 600;
   letter-spacing: 1.5rem;
+  animation: moveInRight 1s ease-out;
+}
+
+@keyframes moveInLeft{
+  0%{
+    opacity: 0;
+    transform: translateX(-100px) 
+  }
+  /* 60%{
+    transform:rotate(180deg); 
+  } */
+  80%{
+    transform: translateX(20px);
+  }
+  100%{
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight{
+  0%{
+    opacity: 0;
+    transform: translateX(100px)
+  }
+  80%{
+    transform: translateX(-20px);
+  }
+  100%{
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1rem 3rem;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all .2s;
+    position: relative;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2)
+}
+.btn::after{
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all .4s;
+}
+
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+.btn:active,
+.btn:focus {
+  outline: none;
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2)
+}
+
+.btn--white {
+  background-color: #fff;
+  color: #777
+}
+
+.btn--white::after {
+  background-color: #fff;
+}
+
+@keyframes moveInBottom{
+  0%{
+    opacity: 0;
+    transform: translateY(30px)
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.btn-animated{
+   animation: moveInBottom .5s ease-out .75s;
+   animation-fill-mode: backwards;
 }
