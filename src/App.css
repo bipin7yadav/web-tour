@@ -7,19 +7,24 @@ Dark green: #28b485
 
 */
 
-*{
+*,
+*::before, *::after{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: inherit;
+}
+
+html{
+  font-size: 62.5%;
 }
 
 body{
   font-family: "Lato" ,sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  /* font-size: 16px; */
   line-height: 1.7;
   color:#777;
-  padding: 30px;
+  padding: 3rem;box-sizing: border-box;
 }
 
 .header__text-box{
@@ -41,14 +46,14 @@ body{
 
 .header__logo-box{
   position: absolute;
-  top:40px;
-  left: 40px;
+  top:4rem;
+  left: 4rem;
 }
 
 
 
 .header__logo{
-  height: 35px;
+  height: 3.5rem;
 }
 
 /* .header__logo:hover{
@@ -65,7 +70,7 @@ body{
 
 .heading-primary--main {
   display: block;
-  font-size: 4rem;
+  font-size: 6rem;
   font-weight: 400;
   letter-spacing: 3.5rem;
   animation-name: moveInLeft;
@@ -77,22 +82,22 @@ body{
 
 .heading-primary--sub {
   display: block;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 600;
-  letter-spacing: 1.5rem;
+  letter-spacing: 1.75rem;
   animation: moveInRight 1s ease-out;
 }
 
 @keyframes moveInLeft{
   0%{
     opacity: 0;
-    transform: translateX(-100px) 
+    transform: translateX(-10rem) 
   }
   /* 60%{
     transform:rotate(180deg); 
   } */
   80%{
-    transform: translateX(20px);
+    transform: translateX(1rem);
   }
   100%{
     opacity: 1;
@@ -103,10 +108,10 @@ body{
 @keyframes moveInRight{
   0%{
     opacity: 0;
-    transform: translateX(100px)
+    transform: translateX(10rem)
   }
   80%{
-    transform: translateX(-20px);
+    transform: translateX(-1rem);
   }
   100%{
     opacity: 1;
@@ -119,11 +124,12 @@ body{
 .btn:visited {
     text-transform: uppercase;
     text-decoration: none;
-    padding: 1rem 3rem;
+    padding: 1.5rem 4rem;
     display: inline-block;
     border-radius: 10rem;
     transition: all .2s;
     position: relative;
+    font-size: 1.6rem;
 }
 
 .btn:hover {
@@ -135,7 +141,7 @@ body{
   display: inline-block;
   height: 100%;
   width: 100%;
-  border-radius: 100px;
+  border-radius: 10rem;
   position: absolute;
   top: 0;
   left: 0;
@@ -167,7 +173,7 @@ body{
 @keyframes moveInBottom{
   0%{
     opacity: 0;
-    transform: translateY(30px)
+    transform: translateY(3rem)
   }
   100%{
     opacity: 1;
