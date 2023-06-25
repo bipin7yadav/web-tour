@@ -3,6 +3,10 @@ import logo from "./img/logo-white.png"
 import img1 from "./img/nat-1-large.jpg"
 import img2 from "./img/nat-2-large.jpg"
 import img3 from "./img/nat-3-large.jpg"
+import {TfiWorld} from "react-icons/tfi"
+import {LiaCompass} from "react-icons/lia"
+import {BsMap} from "react-icons/bs"
+import {AiOutlineHeart} from "react-icons/ai"
 
 function App() {
   return (
@@ -58,6 +62,50 @@ function App() {
           </div>
 
         </section>
+        <section class="section-features">
+                
+                <div class="row">
+                    <div class="col-1-of-4">
+                        <div class="feature-box">
+                            <i class="feature-box__icon icon-basic-world"><TfiWorld /></i>
+                            <h3 class="heading-tertiary u-margin-bottom-small">Explore the world</h3>
+                            <p class="feature-box__text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-1-of-4">
+                        <div class="feature-box">
+                            <i class="feature-box__icon icon-basic-compass"><LiaCompass/></i>
+                            <h3 class="heading-tertiary u-margin-bottom-small">Meet nature</h3>
+                            <p class="feature-box__text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-1-of-4">
+                        <div class="feature-box">
+                            <i class="feature-box__icon icon-basic-map"><BsMap/></i>
+                            <h3 class="heading-tertiary u-margin-bottom-small">Find your way</h3>
+                             <p class="feature-box__text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-1-of-4">
+                        <div class="feature-box">
+                            <i class="feature-box__icon icon-basic-heart"><AiOutlineHeart/></i>
+                            <h3 class="heading-tertiary u-margin-bottom-small">Live a healthier life</h3>
+                            <p class="feature-box__text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
       </main>
       {/* <section className='grid-test'>
         <div className='row'>
