@@ -9,9 +9,9 @@
     @include clearfix;
 
     [class^="col-"] {
-        background-color: orangered;
-        color: white;
-        text-align: center;
+        // background-color: orangered;
+        // color: white;
+        // text-align: center;
         float: left;
 
         &:not(:last-child) {
