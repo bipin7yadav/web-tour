@@ -6,6 +6,11 @@ import img3 from "./img/nat-3-large.jpg"
 import nat8 from "./img/nat-8.jpg"
 import nat9 from "./img/nat-9.jpg"
 
+import logoGreen1x from './img/logo-green-1x.png';
+import logoGreen2x from './img/logo-green-2x.png';
+import logoGreenSmall1x from './img/logo-green-small-1x.png';
+import logoGreenSmall2x from './img/logo-green-small-2x.png';
+
 import videoMP4 from './img/video.mp4';
 import videoWebM from './img/video.webm';
 
@@ -325,6 +330,70 @@ function App() {
                 </div>
             </section>
       </main>
+
+      <footer className="footer">
+        <div className="footer__logo-box">
+          <picture className="footer__logo">
+            <source
+              srcSet={`${logoGreenSmall1x} 1x, ${logoGreenSmall2x} 2x`}
+              media="(max-width: 37.5em)"
+            />
+            <img
+              srcSet={`${logoGreen1x} 1x, ${logoGreen2x} 2x`}
+              alt="Full logo"
+              src={logoGreen2x}
+            />
+          </picture>
+        </div>
+        <div className="row">
+          <div className="col-1-of-2">
+            <div className="footer__navigation">
+              <ul className="footer__list">
+                <li className="footer__item">
+                  <a href="#" className="footer__link">
+                    Company
+                  </a>
+                </li>
+                <li className="footer__item">
+                  <a href="#" className="footer__link">
+                    Contact us
+                  </a>
+                </li>
+                <li className="footer__item">
+                  <a href="#" className="footer__link">
+                    Careers
+                  </a>
+                </li>
+                <li className="footer__item">
+                  <a href="#" className="footer__link">
+                    Privacy policy
+                  </a>
+                </li>
+                <li className="footer__item">
+                  <a href="#" className="footer__link">
+                    Terms
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="col-1-of-2">
+            <p className="footer__copyright">
+              Built by{' '}
+              <a href="#" className="footer__link">
+                Bipin Yadav
+              </a>{' '}
+              for learing{' '}
+              Advanced CSS and Sass
+              <p >
+              </p>
+              <span>
+                &copy; by Jonas Schmedtmann.
+              </span>
+            </p>
+          </div>
+        </div>
+      </footer>
       {/* <section className='grid-test'>
         <div className='row'>
           <div className='col-1-of-2'>col 1 of 2</div>
