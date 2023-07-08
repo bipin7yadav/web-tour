@@ -266,7 +266,7 @@ function App() {
             <div class="story">
               <figure class="story__shape">
                 <img src={nat8} alt="Person on a tour" class="story__img" />
-                <figcaption class="story__caption">Mary Smith</figcaption>
+                <figcaption class="story__caption">Bipin Yadav</figcaption>
               </figure>
               <div class="story__text">
                 <h3 class="heading-tertiary u-margin-bottom-small">I had the best week ever with my family</h3>
@@ -283,7 +283,7 @@ function App() {
             <div class="story">
               <figure class="story__shape">
                 <img src={nat9} alt="Person on a tour" class="story__img" />
-                <figcaption class="story__caption">Jack Wilson</figcaption>
+                <figcaption class="story__caption">Ankit Yadav</figcaption>
               </figure>
               <div class="story__text">
                 <h3 class="heading-tertiary u-margin-bottom-small">WOW! My life is completely different now</h3>
