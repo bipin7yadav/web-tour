@@ -265,7 +265,7 @@ function App() {
           <div class="row">
             <div class="story">
               <figure class="story__shape">
-                <img src={nat7} alt="Person on a tour" class="story__img" />
+                <img src={nat10} alt="Person on a tour" class="story__img" />
                 <figcaption class="story__caption">Bipin Yadav</figcaption>
               </figure>
               <div class="story__text">
@@ -417,7 +417,7 @@ function App() {
       <div class="popup" id="popup">
             <div class="popup__content">
                 <div class="popup__left">
-                    <img src={nat7} alt="Tour photo" class="popup__img"/>
+                    <img src={nat10} alt="Tour photo" class="popup__img"/>
                     <img src={nat9} alt="Tour photo" class="popup__img"/>
                 </div>
                 <div class="popup__right">
