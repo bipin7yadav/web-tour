@@ -3,7 +3,7 @@ import logo from "./img/logo-white.png"
 import img1 from "./img/nat-1-large.jpg"
 import img2 from "./img/nat-2-large.jpg"
 import img3 from "./img/nat-3-large.jpg"
-import nat8 from "./img/nat-8.jpg"
+import nat10 from "./img/nat-7.jpg"
 import nat9 from "./img/nat-9.jpg"
 
 import logoGreen1x from './img/logo-green-1x.png';
@@ -265,7 +265,7 @@ function App() {
           <div class="row">
             <div class="story">
               <figure class="story__shape">
-                <img src={nat8} alt="Person on a tour" class="story__img" />
+                <img src={nat7} alt="Person on a tour" class="story__img" />
                 <figcaption class="story__caption">Bipin Yadav</figcaption>
               </figure>
               <div class="story__text">
@@ -417,7 +417,7 @@ function App() {
       <div class="popup" id="popup">
             <div class="popup__content">
                 <div class="popup__left">
-                    <img src={nat8} alt="Tour photo" class="popup__img"/>
+                    <img src={nat7} alt="Tour photo" class="popup__img"/>
                     <img src={nat9} alt="Tour photo" class="popup__img"/>
                 </div>
                 <div class="popup__right">
