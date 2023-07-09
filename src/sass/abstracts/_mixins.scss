@@ -31,6 +31,9 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 1em = 16px
 */
+
+// @content helps to pass css in mixin
+
 @mixin respond($breakpoint) {
     @if $breakpoint == phone {
         @media only screen and (max-width: 37.5em) { @content };    //600px
