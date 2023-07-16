@@ -33,6 +33,16 @@
     &__left {
         width: 33.333333%;
         display: table-cell;
+
+        @include respond(phone) {
+            display: none !important;
+            width: 0;
+        }
+
+        @include respond(tab-port) {
+            display: none !important;
+            width: 0;
+        }
     }
 
     &__right {
@@ -40,6 +50,9 @@
         display: table-cell;
         vertical-align: middle;
         padding: 3rem 5rem;
+        @include respond(phone) {
+            padding: 2rem 2rem
+        }
     }
 
     &__img {
@@ -63,6 +76,11 @@
         // -ms-hyphens: auto;
         // -webkit-hyphens: auto;
         hyphens: auto;
+
+        @include respond(phone) {
+            column-count: 0 !important;
+            font-size: 1.2rem;
+        }
     }
 
     //Open states
@@ -88,6 +106,11 @@
             display: inline-block;
             transition: all .2s;
             line-height: 1;
+
+            @include respond(phone) {
+            top: 0.7rem;
+            right: .4rem;
+        }
         }
 
         &:hover {
